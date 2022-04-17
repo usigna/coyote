@@ -52,10 +52,6 @@ body {
   white-space: nowrap !important;
 }
 
-.skip-links {
-  list-style: none;
-}
-
 .skip-link {
   clip: rect(1px, 1px, 1px, 1px) !important;
   -webkit-clip-path: inset(50%) !important;
@@ -296,8 +292,6 @@ body {
   }
 }
 
-/* section */
-
 /* hero */
 .hero {
   width: 100%;
@@ -315,10 +309,11 @@ body {
   height: 100%;
   @include flex(column, center, center);
   z-index: 2;
-  // color: $whiteColor;
 }
 
 .title {
+  font-size: 4.5rem;
+  padding: 1.5rem;
 
   &--hero {
     margin: 0 1.5rem 2.5rem;
@@ -330,6 +325,14 @@ body {
     @media screen and (min-width: $largeWidth) {
       margin: 0 0 2.5rem;
     }
+  }
+
+  &--dark-background {
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  &--light-background {
+    background: rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -361,6 +364,36 @@ body {
   width: 80%;
   position: absolute;
   z-index: -1;
+}
+
+/* section */
+.section {
+  width: 100%;
+  padding: 5.5rem 0;
+  color: $whiteColor;
+
+  &--light {
+    color: $blackColor;
+    background: $whiteColor;
+  }
+}
+
+.section__wrapper {
+  
+}
+
+.quote {
+  display: block;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.text {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1.5rem;
 }
 
 /* footer */
