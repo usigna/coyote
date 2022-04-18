@@ -329,6 +329,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
     padding: 1rem 2.5rem;
     text-align: center;
+    box-shadow: 5px 5px 5px $secondBlueColor;
 
     @media screen and (min-width: $largeWidth) {
       margin: 0 0 2.5rem;
@@ -353,6 +354,7 @@ body {
 
   &--dark-background {
     background: rgba(0, 0, 0, 0.45);
+    border-radius: 25px;
   }
 
   &--light-background {
@@ -369,6 +371,7 @@ body {
   border: 3px solid transparent;
   border-radius: 25px;
   transition: background 0.2s, color 0.2s;
+  box-shadow: 5px 5px 5px $secondBlueColor;
 
   &:hover,
   &:focus {
@@ -425,12 +428,14 @@ body {
   padding: 1.5rem;
   border-radius: 25px;
   margin: 0 auto 3rem;
+  box-shadow: 5px 5px 5px $secondBlueColor;
 }
 
 .text {
   &--dark-background {
     padding: 1.5rem;
     background: rgba(0, 0, 0, 0.45);
+    border-radius: 25px;
   }
 }
 
